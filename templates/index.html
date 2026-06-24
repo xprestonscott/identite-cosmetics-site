@@ -77,38 +77,32 @@
   <a href="tel:+19728090742" style="color:#d4b483;">Book Now</a>
 </div>
 
-<!-- HERO -->
-<header class="hero">
-  <div class="hero-grain"></div>
-  <div class="hero-grid container">
+<!-- HERO: full-bleed editorial -->
+<header class="hero-editorial">
+  <div class="hero-editorial-img">
+    <img src="{{ url_for('static', filename='img/corey-james.jpg') }}" alt="Corey James, founder of Identité Cosmetics & Skincare Studio">
+    <div class="hero-editorial-img-scrim"></div>
+  </div>
 
-    <div class="hero-frame-wrap reveal">
-      <div class="hero-frame">
-        <div class="hero-frame-portrait-mark">I.</div>
-        <div class="hero-frame-caption">
-          <span>Identité Studio</span>
-          <span>OKC</span>
-        </div>
+  <div class="hero-editorial-band">
+    <div class="container">
+      <div class="hero-editorial-eyebrow reveal">
+        <span class="rule"></span><span class="eyebrow">Oklahoma City Permanent Cosmetics</span>
       </div>
-    </div>
-
-    <div class="hero-copy">
-      <div class="hero-eyebrow"><span class="rule"></span><span class="eyebrow">Oklahoma City Permanent Cosmetics</span></div>
-      <h1 class="hero-headline serif-display">
-        Your features,<br><span class="line2">as a fine art.</span>
+      <h1 class="hero-editorial-headline serif-display reveal">
+        Your features,<span class="line2"> as a fine art.</span>
       </h1>
-      <p class="hero-sub">Identité is Corey James's licensed permanent cosmetics &amp; corrective skincare studio — where brows, lips, and skin are treated as a portrait worth getting right.</p>
-      <div class="hero-actions">
+      <p class="hero-editorial-sub reveal">Identité is Corey James's licensed permanent cosmetics &amp; corrective skincare studio — where brows, lips, and skin are treated as a portrait worth getting right.</p>
+      <div class="hero-editorial-actions reveal">
         <a href="tel:+19728090742" class="btn-primary">Book a Consultation →</a>
         <a href="{{ url_for('services') }}" class="btn-ghost">View Services</a>
       </div>
-      <div class="hero-meta">
+      <div class="hero-editorial-meta">
         <div class="hero-meta-item"><span class="num">Licensed</span><span class="label">Certified &amp; Insured</span></div>
         <div class="hero-meta-item"><span class="num">20+</span><span class="label">Services Offered</span></div>
         <div class="hero-meta-item"><span class="num">OKC</span><span class="label">NW 56th Street Studio</span></div>
       </div>
     </div>
-
   </div>
 </header>
 
