@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services & Pricing | Identité Cosmetics & Skincare Studio, Oklahoma City</title>
+<meta name="description" content="Full service menu for Identité Cosmetics & Skincare Studio: lip blush, powder brows, microblading, scalp micropigmentation, chemical peels, facials & waxing in Oklahoma City, OK.">
+<link rel="canonical" href="https://identitecosmetics.com/services">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<nav class="nav" id="siteNav">
+  <a href="{{ url_for('home') }}" class="nav-logo">Identité<span class="accent">.</span></a>
+  <div class="nav-links">
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('about') }}">About</a>
+    <a href="{{ url_for('services') }}" class="current">Services</a>
+    <a href="{{ url_for('contact') }}">Contact</a>
+  </div>
+  <a href="tel:+19728090742" class="nav-cta desktop-only">Book Now</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="{{ url_for('home') }}">Home</a>
+  <a href="{{ url_for('about') }}">About</a>
+  <a href="{{ url_for('services') }}">Services</a>
+  <a href="{{ url_for('contact') }}">Contact</a>
+  <a href="tel:+19728090742" style="color:#d4b483;">Book Now</a>
+</div>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Full Service Menu</span>
+    <h1 class="serif-display">Every treatment starts with a consultation, never a guess.</h1>
+    <p class="lead">Pricing below reflects current studio rates. A deposit secures most appointments — the remainder is due at your visit. Have a question about which service fits you? Call the studio directly.</p>
+  </div>
+</header>
+
+<!-- PERMANENT COSMETICS -->
+<section class="svc-category">
+  <div class="container">
+    <div class="svc-category-head">
+      <h2 class="serif-display">Permanent Cosmetics</h2>
+      <span class="count">Brows · Lips · Lash Line</span>
+    </div>
+    <div class="svc-list">
+
+      <div class="svc-row">
+        <div><h3>Complimentary Consultation</h3><p>Discuss goals, assess skin, and map out the right service before booking anything permanent.</p></div>
+        <span class="duration">30 min</span>
+        <div><span class="price">Free</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Lip Blush</h3><p>Naturally tinted, defined lips that restore color and shape without daily makeup.</p></div>
+        <span class="duration">165 min</span>
+        <div><span class="price">$399</span><span class="deposit-note">$99 deposit</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Ombre Lip Blush</h3><p>A soft gradient effect for a more blended, dimensional lipstick look.</p></div>
+        <span class="duration">180 min</span>
+        <div><span class="price">$409</span><span class="deposit-note">$99 deposit</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Dark Lip Neutralization</h3><p>Corrects naturally dark or uneven lip tone, often across multiple sessions.</p></div>
+        <span class="duration">180 min</span>
+        <div><span class="price">$429</span><span class="deposit-note">$99 deposit</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Microblading</h3><p>Hair-like strokes for natural, subtle definition in sparse brows.</p></div>
+        <span class="duration">180 min</span>
+        <div><span class="price">$329</span><span class="deposit-note">$99 deposit</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Blade &amp; Shade</h3><p>Hair-like strokes combined with soft shading for fuller, dimensional brows.</p></div>
+        <span class="duration">180 min</span>
+        <div><span class="price">$349</span><span class="deposit-note">$99 deposit</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Powder Brow</h3><p>A soft, makeup-inspired finish that frames the face with zero daily upkeep.</p></div>
+        <span class="duration">165 min</span>
+        <div><span class="price">$399</span><span class="deposit-note">$99 deposit</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Lash Line Enhancement Tattoo</h3><p>Subtle pigment placed between the lashes for added depth — heals natural, not like eyeliner.</p></div>
+        <span class="duration">120 min</span>
+        <div><span class="price">$279</span><span class="deposit-note">$99 deposit</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Areola Enhancement</h3><p>Restores symmetry and color, and camouflages scarring (non post-mastectomy).</p></div>
+        <span class="duration">180 min</span>
+        <div><span class="price">$349</span><span class="deposit-note">$99 deposit</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Scalp Micropigmentation (SMP)</h3><p>Camouflages thinning, alopecia, or transplant scarring. Includes initial treatment plus two touch-ups. Final price depends on area and scarring, confirmed at consultation.</p></div>
+        <span class="duration">180 min</span>
+        <div><span class="price">$1,399+</span><span class="deposit-note">$99 deposit</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Permanent Cosmetics Touch-Up</h3><p>Refresh and refine existing permanent makeup.</p></div>
+        <span class="duration">150 min</span>
+        <div><span class="price">$349</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CORRECTIVE / REMOVAL -->
+<section class="svc-category">
+  <div class="container">
+    <div class="svc-category-head">
+      <h2 class="serif-display">Correction &amp; Removal</h2>
+      <span class="count">Cosmetic Tattoo Removal</span>
+    </div>
+    <div class="svc-list">
+
+      <div class="svc-row">
+        <div><h3>Cosmetic Tattoo Removal</h3><p>Saline-based lightening or removal of unwanted pigment. Number of sessions depends on age and saturation.</p></div>
+        <span class="duration">75 min</span>
+        <div><span class="price">$129</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Tattoo Removal — 3-Session Package</h3><p>Three saline removal sessions, priced as a package.</p></div>
+        <span class="duration">75 min</span>
+        <div><span class="price">$339</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Tattoo Removal — 6-Session Package</h3><p>Six saline removal sessions for more saturated or stubborn pigment.</p></div>
+        <span class="duration">75 min</span>
+        <div><span class="price">$659</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKINCARE -->
+<section class="svc-category">
+  <div class="container">
+    <div class="svc-category-head">
+      <h2 class="serif-display">Corrective Skincare</h2>
+      <span class="count">Facials · Peels · Resurfacing</span>
+    </div>
+    <div class="svc-list">
+
+      <div class="svc-row">
+        <div><h3>Advanced Skin Resurfacing</h3><p>Encourages renewal and collagen production while addressing texture, fine lines, and acne scarring.</p></div>
+        <span class="duration">75 min</span>
+        <div><span class="price">$299</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Bridal Prep Package</h3><p>A 6-month customized plan of monthly treatments and a tailored skincare routine ahead of your wedding day.</p></div>
+        <span class="duration">60 min</span>
+        <div><span class="price">$1,599</span><span class="deposit-note">$299 deposit</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Nano Infusion Facial</h3><p>Delivers targeted ingredients deep into the skin for hydration, glow, and texture.</p></div>
+        <span class="duration">60 min</span>
+        <div><span class="price">$169</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Light Chemical Peel</h3><p>No-downtime brightening and tightening for fine lines and sun damage.</p></div>
+        <span class="duration">90 min</span>
+        <div><span class="price">$149</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Level Two Peel</h3><p>A deeper formulation for aging skin, acne, hyperpigmentation, and melasma.</p></div>
+        <span class="duration">90 min</span>
+        <div><span class="price">$289</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Advanced Depth Peel</h3><p>For stubborn hyperpigmentation, acne scars, and sun damage. Visible peeling for 3–5 days.</p></div>
+        <span class="duration">40 min</span>
+        <div><span class="price">$329</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>The Clarifying Facial</h3><p>Designed for congested, acne-prone skin — reduces breakouts and calms inflammation.</p></div>
+        <span class="duration">60 min</span>
+        <div><span class="price">$149</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>HD Glow Facial</h3><p>Exfoliates, extracts, and hydrates for a clearer, more luminous complexion.</p></div>
+        <span class="duration">55 min</span>
+        <div><span class="price">$169</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Microdermabrasion</h3><p>Vacuum-suction exfoliation for an immediate glow with zero downtime.</p></div>
+        <span class="duration">50 min</span>
+        <div><span class="price">$79</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Dermaplane</h3><p>Removes dead skin and vellus hair for smooth, silky results.</p></div>
+        <span class="duration">40 min</span>
+        <div><span class="price">$79</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>MediCupping</h3><p>Relieves muscular tension and improves circulation through vacuum cupping.</p></div>
+        <span class="duration">40 min</span>
+        <div><span class="price">$79</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BROW & WAXING -->
+<section class="svc-category">
+  <div class="container">
+    <div class="svc-category-head">
+      <h2 class="serif-display">Brow &amp; Waxing</h2>
+      <span class="count">Lamination · Tint · Wax</span>
+    </div>
+    <div class="svc-list">
+
+      <div class="svc-row">
+        <div><h3>Brow Lamination</h3><p>Smooths and redirects brow hairs for a fuller, lifted shape without permanent makeup.</p></div>
+        <span class="duration">40 min</span>
+        <div><span class="price">$79</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Brow Tint</h3><p>Adds color and definition between fills.</p></div>
+        <span class="duration">30 min</span>
+        <div><span class="price">$29</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Brow Wax</h3><p>Precision shaping for a clean, defined brow line.</p></div>
+        <span class="duration">25 min</span>
+        <div><span class="price">$22</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Brow &amp; Lash Tint Combo</h3><p>Combined tinting for a polished, cohesive look.</p></div>
+        <span class="duration">45 min</span>
+        <div><span class="price">$49</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Lip Wax</h3><p>Quick, precise upper lip waxing.</p></div>
+        <span class="duration">15 min</span>
+        <div><span class="price">$14</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Underarm Wax</h3><p>Fast, thorough underarm waxing.</p></div>
+        <span class="duration">20 min</span>
+        <div><span class="price">$19</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Lower Back Wax</h3><p>Clean, precise lower back waxing.</p></div>
+        <span class="duration">25 min</span>
+        <div><span class="price">$29</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Half Leg Wax</h3><p>Smooth results from knee to ankle.</p></div>
+        <span class="duration">30 min</span>
+        <div><span class="price">$49</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Back Wax</h3><p>Full back waxing.</p></div>
+        <span class="duration">30 min</span>
+        <div><span class="price">$49</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Back &amp; Shoulder Wax</h3><p>Full back and shoulder coverage.</p></div>
+        <span class="duration">35 min</span>
+        <div><span class="price">$69</span></div>
+      </div>
+
+      <div class="svc-row">
+        <div><h3>Full Leg Wax</h3><p>Complete leg waxing, ankle to thigh.</p></div>
+        <span class="duration">45 min</span>
+        <div><span class="price">$89</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="svc-note-band">
+  <div class="container">
+    <p>Cancellations require 24-hour notice. Late cancellations or no-shows are subject to a 25% charge, minimum $75.</p>
+  </div>
+</div>
+
+<section class="cta-band">
+  <div class="container">
+    <h2 class="serif-display reveal">Not sure which service is right for you?</h2>
+    <p class="reveal">Start with a complimentary consultation — no pressure, no guesswork.</p>
+    <a href="tel:+19728090742" class="btn-primary reveal">Call (972) 809-0742</a>
+  </div>
+</section>
+
+{% include 'footer.html' %}
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

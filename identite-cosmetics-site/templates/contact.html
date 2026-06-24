@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact & Book | Identité Cosmetics & Skincare Studio, Oklahoma City</title>
+<meta name="description" content="Book your appointment at Identité Cosmetics & Skincare Studio in Oklahoma City, OK. Call (972) 809-0742 or visit us on NW 56th Street.">
+<link rel="canonical" href="https://identitecosmetics.com/contact">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<nav class="nav" id="siteNav">
+  <a href="{{ url_for('home') }}" class="nav-logo">Identité<span class="accent">.</span></a>
+  <div class="nav-links">
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('about') }}">About</a>
+    <a href="{{ url_for('services') }}">Services</a>
+    <a href="{{ url_for('contact') }}" class="current">Contact</a>
+  </div>
+  <a href="tel:+19728090742" class="nav-cta desktop-only">Book Now</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="{{ url_for('home') }}">Home</a>
+  <a href="{{ url_for('about') }}">About</a>
+  <a href="{{ url_for('services') }}">Services</a>
+  <a href="{{ url_for('contact') }}">Contact</a>
+  <a href="tel:+19728090742" style="color:#d4b483;">Book Now</a>
+</div>
+
+<header class="contact-hero">
+  <div class="container">
+    <span class="eyebrow">Get In Touch</span>
+    <h1 class="serif-display">Let's find the right fit for you.</h1>
+    <p class="lead">Call the studio directly, or send a message below and we'll follow up to schedule your consultation.</p>
+  </div>
+</header>
+
+<div class="contact-grid">
+  <div class="contact-panel">
+    <div class="contact-info-block">
+      <h3>Call</h3>
+      <a href="tel:+19728090742">(972) 809-0742</a>
+    </div>
+    <div class="contact-info-block">
+      <h3>Visit</h3>
+      <p>3300 NW 56th St, Suite 300B<br>Oklahoma City, OK 73112</p>
+      <span class="small">Serving OKC, Edmond, Yukon, Mustang &amp; Warr Acres</span>
+    </div>
+    <div class="contact-info-block">
+      <h3>Hours</h3>
+      <p style="font-size:1rem; font-family:var(--sans);">
+        Monday: 2–6pm<br>
+        Tuesday: 10:30am–6pm<br>
+        Wednesday: 2–6pm<br>
+        Thursday: 10:30am–6pm<br>
+        Friday: 10:30am–6pm<br>
+        Saturday–Sunday: Closed
+      </p>
+    </div>
+    <div class="contact-info-block">
+      <h3>Follow</h3>
+      <a href="https://www.instagram.com/identitecosmetics" target="_blank" rel="noopener">@identitecosmetics</a>
+    </div>
+    <div class="map-embed">Map: 3300 NW 56th St, Suite 300B, Oklahoma City, OK 73112</div>
+  </div>
+
+  <div class="contact-form">
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="service">Service Interested In</label>
+        <select id="service" name="service">
+          <option>Lip Blush</option>
+          <option>Powder Brow</option>
+          <option>Microblading</option>
+          <option>Scalp Micropigmentation</option>
+          <option>Corrective Skincare / Facial</option>
+          <option>Not sure yet — consultation</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      </div>
+      <button type="submit" class="form-submit">Request Appointment</button>
+    </form>
+  </div>
+</div>
+
+{% include 'footer.html' %}
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

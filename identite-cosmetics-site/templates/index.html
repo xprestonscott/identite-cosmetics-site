@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Identité Cosmetics &amp; Skincare Studio | Permanent Makeup &amp; Skincare in Oklahoma City, OK</title>
+<meta name="description" content="Identité Cosmetics &amp; Skincare Studio is Corey James's licensed, certified permanent cosmetics and corrective skincare studio in Oklahoma City, OK. Lip blush, powder brows, microblading, facials &amp; more.">
+<meta name="keywords" content="permanent makeup Oklahoma City, lip blush OKC, powder brows Oklahoma City, microblading OKC, permanent cosmetics studio, Identite Cosmetics, Corey James cosmetics">
+<link rel="canonical" href="https://identitecosmetics.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Identité Cosmetics &amp; Skincare Studio | Oklahoma City">
+<meta property="og:description" content="Licensed permanent cosmetics &amp; corrective skincare studio in Oklahoma City. Lip blush, powder brows, microblading, facials and more.">
+<meta property="og:url" content="https://identitecosmetics.com/">
+<meta property="og:locale" content="en_US">
+
+<!-- Local Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Identité Cosmetics & Skincare Studio",
+  "image": "https://identitecosmetics.com/static/img/og-cover.jpg",
+  "founder": { "@type": "Person", "name": "Corey James" },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3300 NW 56th St Suite 300B",
+    "addressLocality": "Oklahoma City",
+    "addressRegion": "OK",
+    "postalCode": "73112",
+    "addressCountry": "US"
+  },
+  "telephone": "+19728090742",
+  "priceRange": "$$",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "14:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "10:30", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "14:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "10:30", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "10:30", "closes": "18:00" }
+  ],
+  "areaServed": ["Oklahoma City", "Edmond", "Yukon", "Mustang", "Warr Acres", "Bethany"],
+  "sameAs": [
+    "https://www.instagram.com/identitecosmetics",
+    "https://www.facebook.com/share/19mpc1NrR2/"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<nav class="nav" id="siteNav">
+  <a href="{{ url_for('home') }}" class="nav-logo">Identité<span class="accent">.</span></a>
+  <div class="nav-links">
+    <a href="{{ url_for('home') }}" class="current">Home</a>
+    <a href="{{ url_for('about') }}">About</a>
+    <a href="{{ url_for('services') }}">Services</a>
+    <a href="{{ url_for('contact') }}">Contact</a>
+  </div>
+  <a href="tel:+19728090742" class="nav-cta desktop-only">Book Now</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="{{ url_for('home') }}">Home</a>
+  <a href="{{ url_for('about') }}">About</a>
+  <a href="{{ url_for('services') }}">Services</a>
+  <a href="{{ url_for('contact') }}">Contact</a>
+  <a href="tel:+19728090742" style="color:#d4b483;">Book Now</a>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-grain"></div>
+  <div class="hero-grid container">
+
+    <div class="hero-frame-wrap reveal">
+      <div class="hero-frame">
+        <div class="hero-frame-portrait-mark">I.</div>
+        <div class="hero-frame-caption">
+          <span>Identité Studio</span>
+          <span>OKC</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-copy">
+      <div class="hero-eyebrow"><span class="rule"></span><span class="eyebrow">Oklahoma City Permanent Cosmetics</span></div>
+      <h1 class="hero-headline serif-display">
+        Your features,<br><span class="line2">as a fine art.</span>
+      </h1>
+      <p class="hero-sub">Identité is Corey James's licensed permanent cosmetics &amp; corrective skincare studio — where brows, lips, and skin are treated as a portrait worth getting right.</p>
+      <div class="hero-actions">
+        <a href="tel:+19728090742" class="btn-primary">Book a Consultation →</a>
+        <a href="{{ url_for('services') }}" class="btn-ghost">View Services</a>
+      </div>
+      <div class="hero-meta">
+        <div class="hero-meta-item"><span class="num">Licensed</span><span class="label">Certified &amp; Insured</span></div>
+        <div class="hero-meta-item"><span class="num">20+</span><span class="label">Services Offered</span></div>
+        <div class="hero-meta-item"><span class="num">OKC</span><span class="label">NW 56th Street Studio</span></div>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<!-- STATEMENT -->
+<section class="statement reveal">
+  <div class="statement-label">The Identité Philosophy</div>
+  <p class="statement-text">Permanent makeup isn't a shortcut. It's a <em>composition</em> — color, shape, and symmetry, made to belong to your face for years to come.</p>
+</section>
+
+<!-- SERVICES PREVIEW -->
+<section class="services-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Specialties</span>
+        <h2>A studio built around precision, not procedure.</h2>
+      </div>
+      <p>From lip blush to powder brows to corrective skincare — every service starts with a consultation, not a guess.</p>
+    </div>
+
+    <div class="service-grid reveal">
+      <div class="service-card">
+        <span class="index">I.</span>
+        <h3>Lip Blush</h3>
+        <p>Naturally tinted, defined lips that wake up looking finished — no liner required.</p>
+        <span class="price-from">From $399</span>
+      </div>
+      <div class="service-card">
+        <span class="index">II.</span>
+        <h3>Powder Brow</h3>
+        <p>A soft, makeup-inspired brow that frames the face and never needs filling in.</p>
+        <span class="price-from">From $399</span>
+      </div>
+      <div class="service-card">
+        <span class="index">III.</span>
+        <h3>Microblading</h3>
+        <p>Hair-like strokes for subtle, natural-looking density in sparse brows.</p>
+        <span class="price-from">From $329</span>
+      </div>
+      <div class="service-card">
+        <span class="index">IV.</span>
+        <h3>Blade &amp; Shade</h3>
+        <p>Strokes and shading combined for fuller, more dimensional brows.</p>
+        <span class="price-from">From $349</span>
+      </div>
+      <div class="service-card">
+        <span class="index">V.</span>
+        <h3>Corrective Skincare</h3>
+        <p>Chemical peels, skin resurfacing &amp; nano infusion for texture, tone, and scarring.</p>
+        <span class="price-from">From $79</span>
+      </div>
+      <div class="service-card">
+        <span class="index">VI.</span>
+        <h3>Scalp Micropigmentation</h3>
+        <p>Camouflage thinning, alopecia, or transplant scarring with precision pixels.</p>
+        <span class="price-from">From $1,399</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY STRIP -->
+<div class="gallery-strip">
+  <div class="gallery-tile reveal"><span>Lip Blush</span></div>
+  <div class="gallery-tile reveal"><span>Powder Brow</span></div>
+  <div class="gallery-tile reveal"><span>Skin Resurfacing</span></div>
+  <div class="gallery-tile reveal"><span>Studio, OKC</span></div>
+</div>
+
+<!-- ARTIST TEASER -->
+<section class="artist-teaser">
+  <div class="artist-frame reveal">
+    <img src="{{ url_for('static', filename='img/corey-james.jpg') }}" alt="Corey James, founder of Identité Cosmetics & Skincare Studio" style="width:100%; height:100%; object-fit:cover; display:block;">
+  </div>
+  <div class="artist-copy reveal">
+    <span class="eyebrow">The Artist</span>
+    <h2 class="serif-display">Corey James</h2>
+    <p>Identité was founded by Oklahoma City artist Corey James — a licensed, certified, and insured permanent cosmetics and corrective aesthetics specialist with a studio built on one rule: every face is treated like an individual composition, not a template.</p>
+    <p>That means a real consultation before every procedure, custom color development, and a steady hand earned over years of practicing the craft.</p>
+    <a href="{{ url_for('about') }}" class="btn-ghost" style="display:inline-block; margin-top:10px;">Meet the Artist →</a>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="container">
+    <h2 class="serif-display reveal">Ready to see yourself, finished?</h2>
+    <p class="reveal">Complimentary consultations available. Located on NW 56th Street in Oklahoma City.</p>
+    <a href="tel:+19728090742" class="btn-primary reveal">Call (972) 809-0742</a>
+  </div>
+</section>
+
+{% include 'footer.html' %}
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
